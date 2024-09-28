@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.todo-container {
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+}
+
+.date {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h2, h3 {
+    margin: 0;
+}
+
+/* hidden 클래스로 폼을 완전히 숨김 */
+.hidden {
+    display: none;
+}
+
+.todo-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-section {
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.todo-color {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.todo-check input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.empty-message {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* 보라색 + 버튼 스타일 */
+.add-button-container {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.add-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #7a42f4;
+}

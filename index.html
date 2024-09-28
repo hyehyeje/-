@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>투두리스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <div class="date">
+            <h2 id="year-month"></h2>
+            <h3 id="day-weekday"></h3>
+        </div>
+
+        <!-- 투두리스트가 비었을 때 보여줄 메시지 -->
+        <div class="empty-message" id="empty-message">
+            <p>투두리스트를 입력해주세요!</p>
+        </div>
+
+        <!-- 투두리스트 추가 폼 (처음에는 숨겨짐) -->
+        <div class="todo-form hidden" id="todo-form">
+            <input type="text" id="new-task" placeholder="할 일을 입력하세요">
+            <input type="date" id="deadline" placeholder="마감 기한">
+            <select id="priority">
+                <option value="red">중요</option>
+                <option value="yellow">보통</option>
+                <option value="green">덜 중요</option>
+            </select>
+            <button id="add-task">추가</button>
+        </div>
+
+        <!-- 투두리스트 목록 -->
+        <div class="todo-section" id="todo-list">
+            <!-- 투두리스트 항목이 여기에 추가됩니다 -->
+        </div>
+
+        <!-- 보라색 + 버튼 -->
+        <div class="add-button-container">
+            <button id="toggle-form" class="add-button">+</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
